@@ -52,6 +52,24 @@
 					}
 				}
 			}
+
+			function show(i) {
+				var desc = document.getElementsByClassName("desc")[i];
+				var k = 0;
+				if (desc.style.display == "none") k = 1;
+				hideall();
+				if (k) desc.style.display = "block";
+				else desc.style.display = "none";
+			}
+
+			function hideall() {
+				var i = 0;
+				var desc = document.getElementsByClassName("desc");
+				while (desc[i]) {
+					desc[i].style.display = "none";
+					i++;
+				}
+			}
 		</script>
 	</head>
 	<body>
@@ -81,6 +99,9 @@
 						<a class="nav-link" href="#about">About</a>
 					</li>
 					<li class="nav-item">
+						<a class="nav-link" href="#timeline">Timeline</a>
+					</li>
+					<li class="nav-item">
 						<a class="nav-link" href="#events">Events</a>
 					</li>
 					<li class="nav-item">
@@ -101,7 +122,7 @@
 		</div>
 		<div class="page2 fullHeight" id="about">
 			<iframe
-				width="560"
+				width="400"
 				height="315"
 				src="https://www.youtube.com/embed/-S7lTeIZkXI"
 				title="YouTube video player"
@@ -112,14 +133,122 @@
 			<div>
 				<h2>CULTURALS MELA</h2>
 				<p>
-					Ex reprehenderit aliqua nisi et nostrud sunt incididunt velit tempor et esse
-					sit. Esse eiusmod culpa minim culpa est elit irure irure quis non elit consequat
-					amet magna. Ea esse elit aute elit aliqua est exercitation id est et dolore
-					deserunt. Reprehenderit ad mollit velit ex incididunt culpa. Eu officia tempor
-					ipsum excepteur adipisicing Lorem do laborum qui voluptate.
+					Get ready for a week filled with fun and memories; for the Culturals Mela,
+					organized by the Culturals Council of IIT Indore! Become a part of this grand
+					exhibition's first edition, all from the comfort of your own home sweet home.
+					15+ events, talks, workshops, and much more, conducted by as many as 12 clubs,
+					from the 19th to the 25th of April. Mark your calendars now, and be there to
+					witness this all-encompassing spectacle!
 				</p>
 				<br />
 				<a href="#events"><button class="btn spcbtn">Events</button></a>
+			</div>
+		</div>
+		<div class="timeline mb-5" id="timeline">
+			<h2 class="text-center mb-5">TIMELINE</h2>
+			<div class="tlstuff">
+				<div class="tl">
+					<h3>Start</h3>
+					<div class="circles redborder" onclick="show(0)">
+						<div>19</div>
+						<div>April</div>
+					</div>
+					<div class="circles" onclick="show(1)">
+						<div>20</div>
+						<div>April</div>
+					</div>
+					<div class="circles redborder" onclick="show(2)">
+						<div>21</div>
+						<div>April</div>
+					</div>
+					<div class="circles" onclick="show(3)">
+						<div>22</div>
+						<div>April</div>
+					</div>
+					<div class="circles redborder" onclick="show(4)">
+						<div>23</div>
+						<div>April</div>
+					</div>
+					<div class="circles" onclick="show(5)">
+						<div>24</div>
+						<div>April</div>
+					</div>
+					<div class="circles redborder" onclick="show(6)">
+						<div>25</div>
+						<div>April</div>
+					</div>
+					<h3>Finish</h3>
+				</div>
+				<div class="desc">
+					<h3>April 19, 2021</h3>
+					<br />
+					1Aliqua voluptate magna esse veniam anim elit esse pariatur reprehenderit aliqua
+					sit tempor cillum. Aliquip sint cillum minim do id. Mollit commodo eu do Lorem
+					dolor duis quis pariatur ipsum. Qui est ea cupidatat eu ad commodo velit Lorem
+					in quis voluptate eu incididunt occaecat. Incididunt Lorem excepteur ad in ut do
+					in non sint tempor dolore dolor.
+					<button class="btn" onclick="hideall()">X</button>
+				</div>
+				<div class="desc">
+					<h3>April 20, 2021</h3>
+					<br />
+					2Aliqua voluptate magna esse veniam anim elit esse pariatur reprehenderit aliqua
+					sit tempor cillum. Aliquip sint cillum minim do id. Mollit commodo eu do Lorem
+					dolor duis quis pariatur ipsum. Qui est ea cupidatat eu ad commodo velit Lorem
+					in quis voluptate eu incididunt occaecat. Incididunt Lorem excepteur ad in ut do
+					in non sint tempor dolore dolor.
+					<button class="btn" onclick="hideall()">X</button>
+				</div>
+				<div class="desc">
+					<h3>April 21, 2021</h3>
+					<br />
+					3Aliqua voluptate magna esse veniam anim elit esse pariatur reprehenderit aliqua
+					sit tempor cillum. Aliquip sint cillum minim do id. Mollit commodo eu do Lorem
+					dolor duis quis pariatur ipsum. Qui est ea cupidatat eu ad commodo velit Lorem
+					in quis voluptate eu incididunt occaecat. Incididunt Lorem excepteur ad in ut do
+					in non sint tempor dolore dolor.
+					<button class="btn" onclick="hideall()">X</button>
+				</div>
+				<div class="desc">
+					<h3>April 22, 2021</h3>
+					<br />
+					4Aliqua voluptate magna esse veniam anim elit esse pariatur reprehenderit aliqua
+					sit tempor cillum. Aliquip sint cillum minim do id. Mollit commodo eu do Lorem
+					dolor duis quis pariatur ipsum. Qui est ea cupidatat eu ad commodo velit Lorem
+					in quis voluptate eu incididunt occaecat. Incididunt Lorem excepteur ad in ut do
+					in non sint tempor dolore dolor.
+					<button class="btn" onclick="hideall()">X</button>
+				</div>
+				<div class="desc">
+					<h3>April 23, 2021</h3>
+					<br />
+					5Aliqua voluptate magna esse veniam anim elit esse pariatur reprehenderit aliqua
+					sit tempor cillum. Aliquip sint cillum minim do id. Mollit commodo eu do Lorem
+					dolor duis quis pariatur ipsum. Qui est ea cupidatat eu ad commodo velit Lorem
+					in quis voluptate eu incididunt occaecat. Incididunt Lorem excepteur ad in ut do
+					in non sint tempor dolore dolor.
+					<button class="btn" onclick="hideall()">X</button>
+				</div>
+				<div class="desc">
+					<h3>April 24, 2021</h3>
+					<br />
+					6Aliqua voluptate magna esse veniam anim elit esse pariatur reprehenderit aliqua
+					sit tempor cillum. Aliquip sint cillum minim do id. Mollit commodo eu do Lorem
+					dolor duis quis pariatur ipsum. Qui est ea cupidatat eu ad commodo velit Lorem
+					in quis voluptate eu incididunt occaecat. Incididunt Lorem excepteur ad in ut do
+					in non sint tempor dolore dolor.
+					<button class="btn" onclick="hideall()">X</button>
+				</div>
+				<div class="desc">
+					<h3>April 25, 2021</h3>
+					<br />
+					7Aliqua voluptate magna esse veniam anim elit esse pariatur reprehenderit aliqua
+					sit tempor cillum. Aliquip sint cillum minim do id. Mollit commodo eu do Lorem
+					dolor duis quis pariatur ipsum. Qui est ea cupidatat eu ad commodo velit Lorem
+					in quis voluptate eu incididunt occaecat. Incididunt Lorem excepteur ad in ut do
+					in non sint tempor dolore dolor.
+					<button class="btn" onclick="hideall()">X</button>
+				</div>
 			</div>
 		</div>
 		<div class="page3 pb-5" id="events">

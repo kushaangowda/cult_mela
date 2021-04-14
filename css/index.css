@@ -10,6 +10,7 @@ html {
 body {
 	padding: 0;
 	margin: 0;
+	background-color: #111;
 }
 
 .navbar {
@@ -38,7 +39,6 @@ body {
 }
 
 .openingPage {
-	background-color: #111;
 	font-family: "Roboto", sans-serif;
 	color: white;
 	display: flex;
@@ -182,7 +182,6 @@ body {
 }
 
 .page2 {
-	background-color: #111;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
@@ -200,7 +199,8 @@ body {
 
 .page2 div h2,
 .page3 h2,
-.page4 h2 {
+.page4 h2,
+.timeline h2 {
 	font-weight: 700;
 	font-family: "Roboto";
 	color: rgb(227, 16, 57);
@@ -231,7 +231,6 @@ body {
 }
 
 .page3 {
-	background-color: #111;
 	padding-top: 120px;
 	min-height: 100vh;
 }
@@ -263,8 +262,130 @@ body {
 	font-weight: 700;
 }
 
+.timeline {
+	color: white;
+	font-family: "Roboto";
+	padding-top: 120px;
+	min-height: 60vh;
+}
+
+.tl {
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+}
+
+.timeline .circles {
+	border: 3px solid #fff;
+	border-radius: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+	width: 100px;
+	cursor: pointer;
+	margin: 10px;
+}
+
+.timeline .circles:hover {
+	background-color: #fff;
+	color: rgb(227, 16, 57);
+}
+
+.timeline .redborder {
+	border-color: rgb(227, 16, 57);
+}
+
+.timeline .redborder:hover {
+	background-color: rgb(227, 16, 57);
+	color: #fff;
+}
+
+.tlstuff {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.desc {
+	display: none;
+	width: 80%;
+	margin: 100px auto;
+	padding: 40px;
+	border: 3px solid #fff;
+	border-radius: 10px;
+	animation-name: reveal;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
+	font-family: "Poppins";
+}
+
+.desc .btn {
+	display: none;
+	color: #fff;
+	background-color: rgb(227, 16, 57);
+	border: 1px solid rgb(227, 16, 57);
+	border-radius: 10px;
+	margin-top: 20px;
+	position: absolute;
+	top: 20px;
+	right: 40px;
+}
+
+@keyframes reveal {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.tl {
+		flex-direction: column;
+		width: 100%;
+	}
+	.timeline .circles {
+		background-color: #fff;
+		color: rgb(227, 16, 57);
+	}
+	.timeline .redborder {
+		background-color: rgb(227, 16, 57);
+		color: #fff;
+	}
+	.tlstuff {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	.desc {
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: -10;
+		background-color: #111;
+		border: none;
+		overflow-y: auto;
+		color: #fff;
+		z-index: 10000;
+	}
+	.desc .btn {
+		display: block;
+	}
+}
+
+.desc h3 {
+	color: rgb(227, 16, 57);
+}
+
 .page4 {
-	background-color: #111;
 	padding-top: 120px;
 	min-height: 100vh;
 }
