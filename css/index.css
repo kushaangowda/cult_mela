@@ -199,7 +199,7 @@ body {
 
 .page2 div h2,
 .page3 h2,
-.page4 h2,
+.page4 h3,
 .timeline h2 {
 	font-weight: 700;
 	font-family: "Roboto";
@@ -222,6 +222,7 @@ body {
 @media only screen and (max-width: 680px) {
 	.page2 {
 		flex-direction: column;
+		margin-top: 100px;
 	}
 	.page2 div {
 		width: 90%;
@@ -387,5 +388,38 @@ body {
 
 .page4 {
 	padding-top: 120px;
-	min-height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	padding: 40px;
+	background-color: #191919;
+	margin-top: 100px;
+	font-family: "Poppins";
+	color: gray;
+}
+
+.page4 img {
+	max-height: 150px;
+}
+
+.page4 a {
+	color: gray;
+}
+
+.page4 a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+.page4 > div {
+	margin: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+	.page4 {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
 }
