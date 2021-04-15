@@ -33,7 +33,8 @@ function includeHTML() {
 function show(i) {
 	var desc = document.getElementsByClassName("desc")[i];
 	var k = 0;
-	if (desc.style.display == "none") k = 1;
+	console.log(desc.style.display);
+	if (desc.style.display == "none" || desc.style.display == "") k = 1;
 	hideall();
 	if (k) desc.style.display = "block";
 	else desc.style.display = "none";
