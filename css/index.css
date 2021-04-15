@@ -47,7 +47,7 @@ body {
 	align-items: center;
 }
 
-.openingPage img {
+.openingPage .div1 img {
 	width: 50vw;
 	animation-name: slide;
 	animation-duration: 2s;
@@ -124,6 +124,7 @@ body {
 	animation-timing-function: ease-in-out;
 	margin-right: 120px;
 	margin-left: -60px;
+	position: relative;
 }
 
 @keyframes rotate {
@@ -147,9 +148,35 @@ body {
 	animation-fill-mode: forwards;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 @keyframes rotateReverse {
+	0% {
+		transform: rotate(360deg);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+.innerRect {
+	animation-name: nullRotate;
+	animation-duration: 8s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	height: 200px !important;
+	width: 200px !important;
+	position: absolute;
+}
+
+@keyframes nullRotate {
 	0% {
 		transform: rotate(360deg);
 	}
@@ -165,7 +192,7 @@ body {
 	.openingPage {
 		flex-direction: column-reverse;
 		justify-content: space-between;
-		align-items: center;
+		align-items: flex-start;
 		padding-top: 30%;
 		padding-bottom: 20px;
 	}
@@ -176,7 +203,7 @@ body {
 	.openingPage .div1 {
 		padding-left: 0px;
 	}
-	.openingPage img {
+	.openingPage .div1 img {
 		width: 90vw;
 	}
 }
@@ -186,6 +213,7 @@ body {
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: center;
+	padding-top: 120px;
 }
 
 .page2 img {

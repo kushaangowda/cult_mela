@@ -303,7 +303,7 @@
 .mini-card {
 	min-width: 300px;
 	min-height: 350px;
-	padding: 1.5rem;
+	padding: 20px;
 	border-radius: 16px;
 	background: #17141d;
 	-webkit-box-shadow: -1rem 0 3rem #000;
